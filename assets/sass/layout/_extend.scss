@@ -1,3 +1,12 @@
 @import '../base/_colors';
 @import '../base/_variables';
 @import '../layout/_mixin';
+
+%banner-design {
+	position: absolute;
+	content: "";
+}
+
+%section-padding {
+	padding: 70px 0;
+}

@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  width: 100%; }
+
+body {
+  font-family: "Lobster Two", cursive; }
+
+.particle-section {
+  background: #000; }
+  .particle-section #personal-info {
+    padding: 135px 0;
+    color: #b6b6b6; }
+    @media only screen and (max-width: 600px) {
+      .particle-section #personal-info {
+        padding: 0 0; } }
+    .particle-section #personal-info .typed {
+      letter-spacing: 3px; }
+    .particle-section #personal-info h4 {
+      padding: 15px 0; }
+    .particle-section #personal-info button {
+      background: #0072ff;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #0072ff 0%, #00c6ff 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0072ff), color-stop(100%, #00c6ff));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, #0072ff 0%, #00c6ff 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, #0072ff 0%, #00c6ff 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, #0072ff 0%, #00c6ff 100%);
+      /* IE10+ */
+      background: -webkit-gradient(linear, left top, right top, from(#0072ff), to(#00c6ff));
+      background: linear-gradient(to right, #0072ff 0%, #00c6ff 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+      /* IE6-9 */
+      -webkit-transition: 0.7s;
+      -ms-transition: 0.7s;
+      -o-transition: 0.7s;
+      transition: 0.7s; }
+      .particle-section #personal-info button:hover {
+        background: #00c6ff;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #00c6ff 0%, #0072ff 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00c6ff), color-stop(100%, #0072ff));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, #00c6ff 0%, #0072ff 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, #00c6ff 0%, #0072ff 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, #00c6ff 0%, #0072ff 100%);
+        /* IE10+ */
+        background: -webkit-gradient(linear, left top, right top, from(#00c6ff), to(#0072ff));
+        background: linear-gradient(to right, #00c6ff 0%, #0072ff 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+        /* IE6-9 */
+        -webkit-transition: 0.7s;
+        -ms-transition: 0.7s;
+        -o-transition: 0.7s;
+        transition: 0.7s; }
+      .particle-section #personal-info button a {
+        color: #fff;
+        text-decoration: none; }
