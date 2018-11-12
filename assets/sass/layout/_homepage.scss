@@ -1,0 +1,42 @@
+@import '../base/reset';
+@import '../base/colors';
+@import '../base/variables';
+@import '../layout/extend';
+@import '../layout/mixin';
+
+body {
+	font-family: $font-family
+}
+
+.particle-section {
+	background: $black;
+
+	#personal-info {
+	    padding: 135px 0;
+	    color: $light-gray;
+
+	    .typed {
+	    	font-size: 40px;
+	    	letter-spacing: 3px;
+	    }
+
+	    h4 {
+	    	padding: 15px 0;
+	    }
+
+	    button {
+			@include linearGradient($primary-gradient, $secondary-gradient);
+			@include transition(0.7s);
+
+			&:hover {
+				@include linearGradient($secondary-gradient, $primary-gradient);
+				@include transition(0.7s);
+			}
+
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+	    }
+	}
+}
