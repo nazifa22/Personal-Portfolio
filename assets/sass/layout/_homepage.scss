@@ -5,40 +5,41 @@
 @import '../layout/mixin';
 
 body {
-	font-family: $font-family
+	@include linearGradient($bg-gradient-2, $bg-gradient-3);
+	font-family: $font-family;
 }
+.home{
+	color: $dark;
+	@extend %home-padding;
+	@include linearGradient($bg-gradient-2, $bg-gradient-3);
+	z-index: 999;
 
-.particle-section {
-	background: $black;
-	@include respond-to(handhelds) {
-		text-align: center;
+	canvas.particles-js-canvas-el {
+		position: absolute;
+		width: 100%;
+		height: 100vw;
+		top: 0;
+		z-index: 9;
 	}
 
+	img {
+		@include border-radius(100%);
+		border: 5px solid $bg-gradient-3;
+		width: 50%;
+    	height: 95%;
+	}
 
 	#personal-info {
-	    padding: 135px 0;
-	    color: $light-gray;
-
-	    @include respond-to(handhelds) {
-			padding: 0 0 !important;
+		span.typed {
+			font-size: $heading-2;
+			font-weight: 100;
 		}
 
-	    .typed {
-	    	letter-spacing: 3px;
-	    	font-size: $heading-3;
-
-			@include respond-to(handhelds) {
-				font-size: $heading-3-mobile;
-			}
-	    }
-
-	    h4 {
-	    	padding: 15px 0;
-	    }
-
-	    button {
+		button {
 			@include linearGradient($primary-gradient, $secondary-gradient);
 			@include transition(0.7s);
+			margin-top: 10px;
+			border: 0px !important;
 
 			&:hover {
 				@include linearGradient($secondary-gradient, $primary-gradient);
@@ -46,10 +47,20 @@ body {
 			}
 
 			a {
-				color: $white;
+				color: $dark;
 				text-decoration: none;
 			}
 	    }
+	}
+
+	ul {
+		li {
+			@extend %nav-li;
+
+			a {
+				@extend %nav-a;
+			}
+		}
 	}
 }
 

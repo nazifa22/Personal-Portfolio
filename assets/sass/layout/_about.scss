@@ -1,0 +1,68 @@
+@import '../base/reset';
+@import '../base/colors';
+@import '../base/variables';
+@import '../layout/extend';
+@import '../layout/mixin';
+
+body {
+	@include linearGradient($bg-gradient-2, $bg-gradient-3);
+	font-family: $font-family;
+}
+
+.title-section {
+	.title {
+		@extend %title;
+	}
+
+	.info {
+		img {
+			@extend %title-image;
+		}
+
+		p {
+			@extend %name;
+		}
+	}
+}
+
+.about-section {
+	@extend %section-padding;
+	text-align: center;
+
+	ul {
+		li {
+			@extend %nav-li;
+
+			a {
+				@extend %nav-a;
+			}
+		}
+	}
+}
+
+.progress-bar {
+  width: 0;
+  animation: progress 1.5s ease-in-out forwards;
+  
+  .title {
+    opacity: 0;
+    animation: show 0.35s forwards ease-in-out 0.5s;
+  }
+} 
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
