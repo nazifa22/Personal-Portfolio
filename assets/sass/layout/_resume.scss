@@ -1,0 +1,24 @@
+@import '../base/reset';
+@import '../base/colors';
+@import '../base/variables';
+@import '../layout/extend';
+@import '../layout/mixin';
+
+.main-timeline8 .year {
+   	@include linearGradient($primary-gradient, $secondary-gradient);
+   	@include transition(1s);
+
+   	&:hover {
+   		@include linearGradient($secondary-gradient, $primary-gradient);
+   		@include transition(1s);
+   	}
+}
+
+.timeline-icon  {
+	border: 3px solid $primary-gradient !important;
+}
+
+button {
+	@extend %button;
+	margin-top: 50px;
+}

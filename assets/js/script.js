@@ -13,4 +13,9 @@ $(document).ready(function(){
           strings: ["First ^1000 sentence.", "Second sentence."]
         });*/
 
+
+});
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
 });

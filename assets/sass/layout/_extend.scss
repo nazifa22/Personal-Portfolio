@@ -18,7 +18,7 @@
 }
 
 %nav-a {
-	color: $dark;
+	color: $white;
 	padding: 15px;
 	border-radius: 64%;
 	@include linearGradient($primary-gradient, $secondary-gradient);
@@ -46,13 +46,49 @@
     border-radius: 60%;
     top: 52px;
     border: 5px solid $primary-gradient;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 %name {
 	margin-left: 90px;
     background: $secondary-gradient;
-    width: 225px;
-    padding: 5px 0px 5px 15px;
+    width: 250px;
+    padding: 5px 0px 5px 30px;
     border-radius: 0 0 8px 0;
+}
+
+%white-bg {
+	margin: 0 180px;
+    background: #fcfcfc;
+    color: #000;
+    padding: 25px 45px 40px;
+    box-shadow: 3px 2px 20px 0px $primary-gradient;
+}
+
+%gradient-text {
+	@include linearGradient($primary-gradient, $secondary-gradient);
+	-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}
+
+%button {
+	@include linearGradient($primary-gradient, $secondary-gradient);
+	@include transition(0.7s);
+	margin-top: 10px;
+	border: 0px !important;
+
+	&:hover {
+		@include linearGradient($secondary-gradient, $primary-gradient);
+		@include transition(0.7s);
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+			color: $white;
+		}
+	}
 }
