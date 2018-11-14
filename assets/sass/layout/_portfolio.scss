@@ -1,0 +1,23 @@
+@import '../base/reset';
+@import '../base/colors';
+@import '../base/variables';
+@import '../layout/extend';
+@import '../layout/mixin';
+
+.about {
+	.portfolio-title {
+		padding-bottom: 0px !important;
+	}
+
+	h5 {
+		@extend %gradient-text;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	
+	span {
+		a {
+			@extend %gradient-text;
+		}
+	}
+}
